@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Web Page</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>My Practice Web Page</h1>
+</header>
+<hr>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#books">Books</a> |
+    <a href="#about">About</a> |
+    <a href="#education">Education</a> |
+    <a href="#form">Form</a>
+</nav>
+<hr>
+
+<main>
+
+<!-- ABOUT / ARTICLE -->
+<section id="about">
+    <h2>About Section</h2>
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <span>Practice all HTML tags in one project.</span>
+    </article>
+</section>
+
+<hr>
+
+<!-- BOOKS / ASIDE -->
+<aside id="books">
+    <h2>Recommended Books</h2>
+    <ol type="A">
+        <li>Book 1
+            <ul>
+                <li>B1</li>
+                <li>B2</li>
+            </ul>
+        </li>
+        <li>Book 2</li>
+    </ol>
+</aside>
+
+<hr>
+
+<!-- HEADINGS PRACTICE -->
+<section>
+    <h2>Headings Practice</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+</section>
+
+<hr>
+
+<!-- EDUCATION TABLE -->
+<section id="education">
+    <h2>Education</h2>
+
+    <table border="1">
+        <caption>Student Info</caption>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Rameesha</td>
+            <td>IT 6th</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td colspan="3">Table Practice Complete</td>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<!-- FORM SECTION -->
+<section id="form">
+    <h2>Form Practice</h2>
+
+    <form action="/contact_me" method="post">
+
+        <!-- Text -->
+        <label>Enter Hobby:</label>
+        <input type="text" placeholder="Type here"><br><br>
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password"><br><br>
+
+        <!-- Extra Inputs -->
+        <input type="date"><br><br>
+        <input type="file"><br><br>
+        <input type="color"><br><br>
+        <input type="range"><br><br>
+
+        <!-- Gender -->
+        <h3>Gender</h3>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+
+        <br><br>
+
+        <!-- Fruits Checkbox -->
+        <h3>Fruits</h3>
+        <input type="checkbox" name="fruit" value="Apple"> Apple
+        <input type="checkbox" name="fruit" value="Banana"> Banana
+        <input type="checkbox" name="fruit" value="Mango"> Mango
+
+        <br><br>
+
+        <!-- Select -->
+        <label>Choose Fruit:</label>
+        <select name="fruit">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Mango</option>
+            <option>Orange</option>
+        </select>
+
+        <br><br>
+
+        <!-- Textarea -->
+        <textarea rows="4" cols="40">Write description...</textarea>
+
+        <br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+
+    </form>
+</section>
+
+</main>
+
+<hr>
+
+<!-- FOOTER -->
+<footer>
+    <p>Footer - HTML Practice Project</p>
+</footer>
+
+</body>
+</html>
