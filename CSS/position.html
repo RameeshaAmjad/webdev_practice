@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practice Set Level 5</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    /* Header */
+    header {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Navbar */
+    nav {
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: yellow;
+    }
+
+    /* Main Section */
+    .main {
+        padding: 20px;
+    }
+
+    /* Green Circle Div */
+    .circle {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* Two inline blocks */
+    .box {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    #box1 {
+        background-color: red;
+    }
+
+    #box2 {
+        background-color: blue;
+    }
+
+    /* Overlapping divs using z-index */
+    .overlap-container {
+        position: relative;
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    .div1 {
+        width: 120px;
+        height: 120px;
+        background-color: orange;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+    }
+
+    .div2 {
+        width: 120px;
+        height: 120px;
+        background-color: purple;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 2; /* on top */
+    }
+
+    /* Fixed div (top right, stays on scroll) */
+    .fixed-box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    /* Footer */
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Website</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="main">
+
+    <div class="circle"></div>
+
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+
+    <div class="overlap-container">
+        <div class="div1"></div>
+        <div class="div2"></div>
+    </div>
+
+</div>
+
+<div class="fixed-box">Fixed</div>
+
+<footer>
+    Footer Text
+</footer>
+
+</body>
+</html>

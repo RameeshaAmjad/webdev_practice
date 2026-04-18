@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .psudo{
+            height: 25px;
+            width: 150px;
+            background-color: green;
+            border: 2px solid black;
+            border-radius: 15px;
+
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: steps(3);
+            transition-delay: 1s;
+        }
+        .psudo:hover{
+            height: 30px;
+            width: 170px;
+            background-color: pink;
+        }
+        .psudo:active{
+            height: 35px;
+            width: 180px;
+            background-color: red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <button class="psudo">Hello</button>
+</body>
+</html>

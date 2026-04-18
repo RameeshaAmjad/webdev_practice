@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice Set Level 6 - Modern UI</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:linear-gradient(90deg,#0f172a,#1e293b);
+  position:sticky;
+  top:0;
+}
+
+.navbar h1{
+  font-size:20px;
+  color:#22c55e;
+}
+
+.navbar ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+.navbar ul li{
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.navbar ul li:hover{
+  color:#22c55e;
+}
+
+/* ===== SECTION CARDS ===== */
+.container{
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+}
+
+.card{
+  background:#1e293b;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.title{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:15px;
+}
+
+.badge{
+  background:#22c55e;
+  padding:5px 10px;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+/* ===== FLEX IMAGE CENTER ===== */
+.center-box{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:180px;
+  border:2px dashed #334155;
+  border-radius:10px;
+  color:#94a3b8;
+}
+
+/* ===== THREE BOXES ===== */
+.box-wrapper{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.box{
+  flex:1;
+  min-width:150px;
+  height:100px;
+  border-radius:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+}
+
+.box1{background:#3b82f6;}
+.box2{background:#8b5cf6;}
+.box3{background:#f59e0b; flex:2;}
+
+/* ===== RESPONSIVE BOX ===== */
+.responsive{
+  width:60px;
+  height:60px;
+  background:green;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+/* MEDIA QUERIES */
+@media(max-width:300px){
+  .responsive{background:green;}
+}
+
+@media(min-width:300px) and (max-width:400px){
+  .responsive{background:red;}
+}
+
+@media(min-width:401px){
+  .responsive{background:blue;}
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:20px;
+  margin-top:20px;
+  background:#0b1220;
+  color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h1>Practice Set Level 6</h1>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Contact</li>
+  </ul>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- CARD 1 -->
+  <div class="card">
+    <div class="title">
+      <span class="badge">1</span>
+      <h3>Same Navbar (Flexbox)</h3>
+    </div>
+    <p>Navbar styled using Flexbox with spacing.</p>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card">
+    <div class="title">
+      <span class="badge">2</span>
+      <h3>Center Image using Flexbox</h3>
+    </div>
+    <div class="center-box">Centered Content</div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card">
+    <div class="title">
+      <span class="badge">3</span>
+      <h3>Three Box Layout</h3>
+    </div>
+
+    <div class="box-wrapper">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3 (Flexible)</div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card">
+    <div class="title">
+      <span class="badge">4</span>
+      <h3>Media Query Box</h3>
+    </div>
+
+    <div class="center-box">
+      <div class="responsive"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 Practice Set Level 6 | Flexbox + Grid + Media Queries
+</div>
+
+</body>
+</html>
